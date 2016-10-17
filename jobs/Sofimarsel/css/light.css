@@ -1,0 +1,115 @@
+#sliders-fb3 {
+	width: 100%;
+	height: 360px;
+	background: #fee5be;
+	border-bottom: 6px solid #ffe6be;
+	margin: 0 auto;
+	padding-top: 5px;
+	margin-top: 80px;
+}
+.sliders-bg3 {
+	background: url(../images/fb3-sl-bg.png) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 354px;
+}
+.sliders-bg3 h1 {
+	padding-top: 40px;
+	font: 31px/31px "Tahoma", sans-serif;
+	text-align: center;
+}
+.sliders-bg3 p {
+	margin-top: 35px;
+	font: 19px/25px "Tahoma", sans-serif;
+	text-align: center;
+}
+
+
+
+
+
+
+#shine2 {
+    width: 100%;
+    height: 1046px;
+    background: #ffe6be;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+
+#shine2 h1{
+	font: 31px/31px "Tahome", sans-serif;
+	color: black;
+}
+#shine2 p{
+	margin-top: 20px;
+	font: 23px/23px "Tahome", sans-serif;
+	color: black;
+}
+#shine2 .link-bottom {
+	padding: 15px 0 15px 0;
+	width: 400px;
+}
+#shine2 .cont-shine {
+	margin: 0 auto;
+	margin-top: 15px;
+	width: 1214px;
+	height: 566px;
+	/*outline: 1px solid blue;*/
+}
+#shine2 .shines {
+	float: left;
+	width: 390px;
+	height: 275px;
+	background: white;
+	/*outline: 1px solid green;*/
+	margin: 0 22px 15px 0;
+}
+ #shine2 .shines img {
+	float: left;
+	width: 150px;
+	height: 150px;
+	margin: 20px 0 0 20px;
+}
+#shine2 .shines p.shine-text {
+	float: left;
+	width: 150px;
+	height: 50px;
+	margin: 130px 0 0 40px;
+	font: 23px/23px "Tahome", sans-serif;
+}
+#shine2 .shines p.shine-price {
+	display: block;
+	width: 265px;
+	height: 57px;
+    border-radius: 20px;
+    margin: 210px 0 0 63px;
+    font: 23px/23px "Tahome", sans-serif;
+    text-align: center;
+    border: 6px solid #ffe6be;
+    padding-top: 11px;
+    cursor: pointer;
+}
+#shine2 .shines p.shine-price:hover {
+	background: #ffe6be
+}
+#shine2 .shines:nth-child(3),
+#shine2 .shines:nth-child(6),
+#shine2 .shines:nth-child(9){
+	margin-right: 0;
+}
+
+#shine2 .wish-shines {
+	width: 390px;
+	height: 275px;
+	background: rgba(1,1,1,0);
+}
+#shine2 .wish-shines a{
+	display: block;
+ 	width: 326px;
+    height: 87px;
+	margin: 0 auto;
+    margin-top: 90px;
+	background: url(../images/wish-shine.png) no-repeat;
+	cursor: pointer;
+}

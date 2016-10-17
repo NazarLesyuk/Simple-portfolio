@@ -1,0 +1,252 @@
+#sliders-fb2 {
+	width: 100%;
+	height: 360px;
+	background: #fee5be;
+	border-bottom: 6px solid #ffe6be;
+	margin: 0 auto;
+	padding-top: 5px;
+	margin-top: 80px;
+}
+.sliders-bg2 {
+	background: url(../images/fb2-sl-bg.png) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 354px;
+}
+.sliders-bg2 h1 {
+	padding-top: 40px;
+	font: 31px/31px "Tahoma", sans-serif;
+	text-align: center;
+}
+.sliders-bg2 p {
+	margin-top: 35px;
+	font: 19px/25px "Tahoma", sans-serif;
+	text-align: center;
+}
+
+#leave-review {
+	width: 100%;
+	height: 871px;
+	background: #fee5be;
+}
+
+#leave-review h1{
+	text-align: center;
+	font: 23px/23px Tahoma, sans-serif;
+	padding: 30px 0 0 0;
+}
+#leave-review a{
+	display: block;
+	width: 390px;
+	height: 75px;
+	text-align: center;
+	border: 4px solid #ac8c58;
+	border-radius: 20px;
+	background: white;
+	font: 31px/31px Tahoma, sans-serif;
+	line-height: 65px;
+	margin: 0 auto;
+	margin-top: 30px;
+	color: black;
+}
+
+#leave-review a:hover{background: none; color: #ac8c58;}
+
+.reviews-pattern {
+	width: 100%;
+	height: auto;
+	font: 23px/23px Tahoma, sans-serif;
+	background: #fff;
+	margin-bottom: 10px;
+	padding: 30px 0 40px 30px;
+}
+.cont-reviews-pattern {
+	margin-top: 50px;
+}
+.reviews-pattern p span {
+	margin-right: 10px;
+}
+.reviews-pattern p:nth-child(2) {
+	margin-left: 20px;
+	font: 19px/19px Tahoma, sans-serif;
+}
+.reviews-pattern p:nth-child(3) {
+	margin-top: 30px;
+	font: 23px/30px Tahoma, sans-serif;
+}
+
+
+#example-ceiling {
+	width: 100%;
+	height: auto;
+	background: #fee5be;
+	text-align: center;
+	padding: 30px 0 50px 0;
+}
+#example-ceiling h1 {
+	font: 31px/31px Tahoma, sans-serif;
+}
+#example-ceiling p {
+	margin-top: 20px;
+	font: 23px/30px Tahoma, sans-serif;
+}
+#example-ceiling a {
+	display: block;
+	width: 210px;
+	height: 48px;
+	border: 4px solid #ac8c58;
+	border-radius: 12px;
+	background: white;
+	font: 23px/23px Tahoma, sans-serif;
+	line-height: 38px;
+	margin: 0 auto;
+	margin-top: 30px;
+	color: black;
+}
+#example-ceiling a:hover {background: none; color: #ac8c58;}
+
+#reviews2 {
+	width: 100%;
+	height: 870px;
+	background: white;
+	/*padding: 15px 0 23px 0*/
+}
+#reviews2>.container>h1 {
+	font: 31px/31px "Tahome", sans-serif;
+	color: #000;
+	text-align: center;
+    padding: 30px 0 30px 0;
+}
+.link-bottom {
+	font: 23px/23px "Tahome", sans-serif;
+	color: #000;
+	text-align: center;
+	display: block;
+    margin: 0 auto;
+    padding: 15px 0 15px 0;
+	width: 380px;
+}
+
+.link-bottom:hover  {
+	color: #845c15;
+}
+.review-all2 {
+	width: 1220px;
+	margin: 0 auto;
+	/*outline: 1px solid red;*/
+}
+
+.review2 {
+	float: left;
+	width: 600px;
+	height: 355px;
+	background: #fee5be;
+	margin: 0 20px 20px 0;
+	padding: 20px 8px 15px 25px;
+}
+.review2:nth-child(2),
+.review2:nth-child(4){
+	margin-right: 0;
+}
+.review2:nth-child(3),
+.review2:nth-child(4){
+	margin-bottom: 0;
+}
+
+.review2 .info {
+	float: left;
+	width: 250px;
+	height: 207px;
+	/*outline: 1px solid blue;*/
+	margin-right: 5px;
+}
+.review2 .info h1{
+	font: 23px/23px "Tahome", sans-serif;
+	color: #000;
+	text-align: center;
+	margin-bottom: 9px;
+}
+.review2 .info .inside img {
+	float: left;
+}
+.review2 .info .inside .img2 {
+	float: left;
+	margin: 33px 0 0 -54px;
+}
+.review2 .info .inside time {
+	float: left;
+	margin: 5px 0 10px 30px;
+	font: 17px/17px "Tahome", sans-serif;
+}
+.review2 .info p {
+	font: 16px/16px "Tahome", sans-serif;
+	float: left;
+	margin: 20px 0 0 5px;
+}
+.review2 .video {
+	float: left;
+	width: 312px;
+	height: 207px;
+	background: #222;
+}
+.review2 .photos {
+	float: left;
+	margin: 25px 0 0 30px;
+	width: 481px;
+	height: 90px;
+	/*outline: 1px solid green;*/
+}
+.review2 .photos .photo {
+	float: left;
+	margin: 0 50px 0 0;
+	width: 127px;
+	height: 90px;
+	/*outline: 1px solid blue;*/
+	background: #847567;
+}
+.review2 .photos .photo:last-child {
+	margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+#being-friends {
+	width: 100%;
+	height: auto;
+	background: white;
+	text-align: center;
+	padding: 30px 0 30px 0;
+	border-top: 40px solid #fee5be;
+	border-bottom: 6px solid #fee5be;
+}
+#being-friends h1 {
+	font: 31px/31px Tahoma, sans-serif;
+}
+#being-friends p {
+	margin-top: 20px;
+	font: 23px/30px Tahoma, sans-serif;
+}
+#being-friends a {
+	display: block;
+	width: 210px;
+	height: 48px;
+	border: 4px solid #ac8c58;
+	border-radius: 12px;
+	background: white;
+	font: 23px/23px Tahoma, sans-serif;
+	line-height: 38px;
+	margin: 0 auto;
+	margin-top: 30px;
+	color: black;
+}
+#being-friends a:hover {background: #fee5be; color: #222;}
+
+
+

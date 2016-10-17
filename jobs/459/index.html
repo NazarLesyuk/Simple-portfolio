@@ -1,0 +1,729 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<link id="page_favicon" href="favicon.ico" rel="icon" type="image/x-icon" />
+	<title>Швейное предприятие в москве 
+в Москве</title>
+	
+	<script crossorigin="anonymous" async type="text/javascript" src="//api.pozvonim.com/widget/callback/v3/88f7a4491329fef6d5ce642c3d1a08dd/connect" id="check-code-pozvonim" charset="UTF-8"></script>
+
+	<link href='../fonts.googleapis.com/css@family=Roboto_3A400,100,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='../fonts.googleapis.com/css@family=PT+Sans_3A400,700,400italic,700italic&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link href='../fonts.googleapis.com/css@family=Ubuntu_3A300,400,500,700,300italic,400italic,500italic,700italic&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link href='../fonts.googleapis.com/css@family=Open+Sans_3A100,300,400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="../yui.yahooapis.com/pure/0.3.0/pure-min.css">
+	<link href="../netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>		
+
+	<!-- fancyBox --> 
+	<link rel="stylesheet" href="wp-content/themes/erida/js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="wp-content/themes/erida/js/fancybox/jquery.fancybox.pack.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" ></script>
+	<script type="text/javascript">
+		window.config = {
+
+		};
+	</script>	
+	<link href="wp-content/themes/erida/css/default.css" rel="stylesheet">
+	<link href="wp-content/themes/erida/css/styles.css" rel="stylesheet">
+	
+	<!-- flipclock http://flipclockjs.com/ -->
+	<link href="wp-content/themes/erida/css/flipclock.css" rel="stylesheet">
+	<script type="text/javascript" src="wp-content/themes/erida/js/flipclock.js"></script>
+
+	<!-- slider SLy http://darsa.in/sly/#!examples -->
+	<script type="text/javascript" src="wp-content/themes/erida/js/sly.js"></script>	
+
+	<!-- Placeholder.js http://jamesallardice.github.io/Placeholders.js/ -->
+	<script type="text/javascript" src="wp-content/themes/erida/js/placeholders.min.js"></script>				
+
+	<script type="text/javascript" src="wp-content/themes/erida/js/lib.js"></script>
+	<script src="../api-maps.yandex.ru/2.0-stable/@load=package.standard&lang=ru-RU" type="text/javascript"></script>
+	<script type="text/javascript">
+	    ymaps.ready(init);
+	    var myMap;
+	
+	    function init(){     
+	        myMap = new ymaps.Map ("map", {
+	            center: [55.857498,37.582000],
+	            zoom: 16
+	        });
+	        var myPlacemark = new ymaps.Placemark([55.857498,37.583131]);
+			myMap.geoObjects.add(myPlacemark);
+	    }
+	</script>
+	<script>
+		$(document).ready(function(){
+			var date=new Date();
+			
+			/* 
+			
+			Обновляемая дата
+			
+			$(".date-till").text((date.getDate())+" "+getMonthName(date.getMonth()));
+			var tomorrow_date=new Date(date.getTime()+24 * 60 * 60 * 1000);
+			tomorrow_date.setHours(0,0,0,0);
+			var time_left=tomorrow_date.getTime()-date.getTime();
+			time_left=Math.floor(time_left/1000);
+			*/
+			var stringDate = '' + 20160214;
+
+			var firstMay = new Date(+stringDate.slice(0, 4), +stringDate.slice(4, 6) - 1, +stringDate.slice(6, 8), 0, 0, 0);
+			var time_left=firstMay.getTime()-date.getTime();
+			time_left=Math.floor(time_left/1000);
+			$(".date-till").text(firstMay.getDate()+" "+getMonthName(firstMay.getMonth()));
+
+			function drawTimer(){
+				if(time_left<0){
+					time_left=0;
+				}	
+
+				var tmp_time=time_left;
+
+				var days=Math.floor(tmp_time/(24*60*60));
+				tmp_time-=(24*60*60)*days;
+
+				var hours=Math.floor(tmp_time/(60*60));
+				tmp_time-=(60*60)*hours;
+
+				var minutes=Math.floor(tmp_time/60);
+				tmp_time-=60*minutes;
+
+				$(".timer-days").text(addZeroes(days,2));
+				$(".timer-hours").text(addZeroes(hours,2));
+				$(".timer-minutes").text(addZeroes(minutes,2));
+				$(".timer-seconds").text(addZeroes(tmp_time,2));
+
+				time_left--;					
+
+			};
+			setInterval(drawTimer,1000);
+
+			function addZeroes(number,zeroesnum){
+				number=number+'';
+				while(number.length<zeroesnum){
+					number="0"+number;
+				}
+				return number;
+			}
+			function getMonthName(num){
+				if(num===0){
+					return "января";
+				}
+				if(num===1){
+					return "февраля";
+				}
+				if(num===2){
+					return "марта";
+				}
+				if(num===3){
+					return "апреля";
+				}
+				if(num===4){
+					return "мая";
+				}
+				if(num===5){
+					return "июня";
+				}
+				if(num===6){
+					return "июля";
+				}
+				if(num===7){
+					return "августа";
+				}
+				if(num===8){
+					return "сентября";
+				}
+				if(num===9){
+					return "октября";
+				}
+				if(num===10){
+					return "ноября";
+				}																					
+				if(num===11){
+					return "декабря";
+				}
+			};
+
+			$('body').scrollTop(1); 
+
+			$.fn.centered_popup = function() {
+			    this.css('position', 'fixed');
+			    this.css('top', ($(window).height() - this.outerHeight()) / 2 + 'px');
+			    this.css('left', ($(window).width() - this.outerWidth()) / 2 + 'px');
+			}
+
+			$('form .button').click(function(e){
+				e.preventDefault();
+				var name=$(e.currentTarget).siblings(".callback-name").val();
+				var tel_mobile=$(e.currentTarget).siblings('.callback-phone').val();
+				if ((tel_mobile==null)||(tel_mobile.length<7)||(isNaN(parseInt(tel_mobile,10)))) {
+					$(e.currentTarget).siblings(".callback-phone").css('border','1px solid red');
+				}
+				if((tel_mobile==null)||(tel_mobile.length<7)||(isNaN(parseInt(tel_mobile,10) ) ) ) {
+					$(e.currentTarget).text("Заполните форму");
+					return;
+				}
+				
+				$.post($(e.currentTarget).parent('form').attr('action'), $(this).parent('form').serialize(), function(res) {
+					yaCounter24375454.reachGoal("order");
+					$('form').each(function(){
+						$(this)[0].reset();
+						$(this).find(".callback-phone").css('border-top','1px solid #8e8e8e');
+					})
+					showResult();
+					
+				});
+			});
+	
+			function showPopup(){
+				    $("#overlay-pop").show();
+				    $(".popup-form").centered_popup();
+				    $(".popup-form").show();
+			    }
+			    
+		    function showResult(){
+				hidePopup();
+				$("#overlay-pop").show();
+				$("#form-result").centered_popup();
+				$("#form-result").show();
+		    }
+		    
+		    function hidePopup(){
+			    $("#overlay-pop").hide();
+			    $(".popup-form").hide();
+		    }
+		    
+		    function hideResult(){
+			    $("#form-result").hide();
+			    $(".popup-form").hide();
+		    }
+		    
+		    $(".contact-button").click(function(){
+			    showPopup();
+				console.log('ok');
+		    });
+		    
+		    $("#overlay-pop, .form-result").click(function(){
+			    hidePopup();
+			    hideResult();
+		    });
+	
+			$("input").keydown(function(e){
+				$(e.currentTarget).css('border','none');
+				$(e.currentTarget).css('border-top','1px solid #8e8e8e');
+				$(e.currentTarget).siblings('.button').text("Оставить заявку");
+			});
+			
+			$(".popup-form input").keydown(function(e){
+				$(e.currentTarget).siblings('.button').text("Заказать звонок");
+			});
+			
+			
+			$('.fancy').fancybox();
+		});
+	</script>
+</head>
+<body>
+	<div id="overlay-pop"></div>
+	<div id="form-result">
+		Спасибо за заявку!
+	</div>
+	<div class="callback-right popup-form">
+		<form action="ordert.php" method="post">
+			<div class="form-header">
+				<h5>Оставьте заявку</h5>
+			</div>
+			<input type="text" class="callback-name" name="name" placeholder="Имя"/>
+			<input type="text" class="callback-phone" name="phone" placeholder="Телефон*"/>
+			<p>Наш специалист проконсультирует по любым вопросам</p>
+			<button type="submit" class="button">Заказать звонок</button>
+		</form>
+	</div>
+	<div id="page">
+		<div id="header">
+			<div class="container">
+				<div class="pure-g">					
+					<div class="pure-u-1-4" style="float:left;">
+						<div class="logo">
+							<img class="menu-item" src="images/eridalogo.png" alt="" data-scroll-target="#page"/>
+						</div>
+					</div>
+					<div class="pure-u-1-2" style="float:left;">
+						<ul class="header-nav">
+							<li class="menu-item"><a href="#why">Выгоды</a></li>
+							<li class="menu-item"><a href="#esle">Цены</a></li>
+							<li class="menu-item"><a href="#how">Заказ</a></li>
+							<li class="menu-item"><a href="#reviews">Бесплатно</a></li>
+						</ul>
+					</div>
+					<div class="pure-u-1-4" style="float:left;    margin-left: 200px;">
+						<div class="contacts">
+							+7 (499) <span style='font-weight:bold'>350-47-01</span>							<p class="time"><a href="mailto:info@ceh499.ru">info@ceh499.ru</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(с 9 до 21)</p>
+						</div>
+						<div class="contact-button-container">
+							<button class="button contact-button">Заказать срочный звонок</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="main">
+			
+			<div class="container" data-animation-speed="1">
+				<div id="robo" style="width:100%;height:100%;position:fixed;z-index:998;top:0;left:0;background: rgba(49, 46, 46, 0.92);"></div>
+				<div id="rkk" style="width:300px;  padding: 50px 25px;
+    height: 385px;
+    -webkit-border-radius: 0px 7px 7px 0px;
+    -moz-border-radius: 0px 7px 7px 0px;
+    border-radius: 0px 7px 7px 0px;
+    background-color: #CBBFAF;
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.55);
+    color: #2f420a;
+    text-align: center;position:fixed;top:50%;left:50%;margin:-190px 0px 0px -150px;z-index:999;">
+		<form action="call-back.php" method="post">
+			<div class="form-header">
+				<h5>Оставьте заявку</h5>
+			</div>
+			<input type="text" style="display: block;
+    margin-bottom: 8px;
+    padding-left: 45px;
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-top: 1px solid #8e8e8e;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-box-shadow: inset 0px 15px 20px rgba(0,0,0,0.15);
+    -moz-box-shadow: inset 0px 15px 20px rgba(0,0,0,0.15);
+    box-shadow: inset 0px 15px 20px rgba(0,0,0,0.15);
+    color: #000;" class="callback-name" name="name" placeholder="Имя"/>
+			<input type="text" style="display: block;
+    margin-bottom: 8px;
+    padding-left: 45px;
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-top: 1px solid #8e8e8e;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-box-shadow: inset 0px 15px 20px rgba(0,0,0,0.15);
+    -moz-box-shadow: inset 0px 15px 20px rgba(0,0,0,0.15);
+    box-shadow: inset 0px 15px 20px rgba(0,0,0,0.15);
+    color: #000;" class="callback-phone" name="phone" placeholder="Телефон*"/>
+			<p>Наш специалист проконсультирует по любым вопросам</p>
+			<button type="submit" class="button">Заказать звонок</button>
+		</form>
+		</div>
+				<div class="pure-g">
+					<div class="pure-u-2-3">
+						<div class="callback-left" >
+							<h1>Швейное<span>предприятие</span><span class="black">в Москве</span></h1>
+							<p>Производство по массовому пошиву одежды</p>
+							<p>Цены - от 97 руб. за изделие</p>
+							<p>Принимаем заказы по всей России</p>
+						</div>
+					</div>
+					<div class="pure-u-1-3">
+						<div class="callback-right">
+							<form action="ordert.php" method="post">
+								<div class="form-header">
+									<h5>Оставьте заявку</h5>
+									<p>на консультацию</p>
+								</div>
+								<input type="text" class="callback-name" name="name" placeholder="Имя"/>
+								<input type="text" class="callback-phone" name="phone" placeholder="Телефон*"/>
+								<p>Получите бесплатную консультацию прямо сейчас !</p>
+								<button type="submit" class="button">Оставить заявку</button>
+								<div class="form-email">или пишите на <a href="mailto:info@ceh499.ru">info@ceh499.ru </a></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="about">
+			<div class="about-wrapper" id="esle" style="height:900px;background-color:#fff;">
+				<div class="container">
+				<h2 class="fadein" data-animation-speed="0.5">Наши цены<br/><span>на пошив изделий<hr/></span></h2>
+					<div class="clear-fix"></div>
+					<div class="pure-g">
+													<div class="pure-u-1-2">
+								<div class="advantages-item slideleft" data-animation-speed="0.5">
+									<div class="pure-g">
+										<div class="pure-u-1-4">
+																						<img src="wp-content/uploads/2014/03/adv-icon-1.png" alt="" class="advantages-img"/>
+										</div>
+										<div class="pure-u-3-4">
+											<h4>ПОШИВ ОДЕЖДЫ</h4>
+											<p> Рубашки, блузки, юбки и т.д.</p>
+											<h4>ОТ 192 РУБ.</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+													<div class="pure-u-1-2">
+								<div class="advantages-item slideright" data-animation-speed="0.5">
+									<div class="pure-g">
+										<div class="pure-u-1-4">
+																						<img src="wp-content/uploads/2014/03/adv-icon-2.png" alt="" class="advantages-img"/>
+										</div>
+										<div class="pure-u-3-4">
+											<h4>ПОШИВ ВЕРХНЕЙ ОДЕЖДЫ</h4>
+											<p>Ветровки, жакеты, пальто и т.д.</p>
+											<h4>ОТ 410 РУБ.</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+													<div class="pure-u-1-2">
+								<div class="advantages-item slideleft" data-animation-speed="0.5">
+									<div class="pure-g">
+										<div class="pure-u-1-4">
+																						<img src="wp-content/uploads/2014/03/adv-icon-3.png" alt="" class="advantages-img"/>
+										</div>
+										<div class="pure-u-3-4">
+											<h4>ПОШИВ ТРИКОТАЖА</h4>
+											<p>Платья, футболки, <br> толстовки и т.д. </p>
+											<h4>ОТ 97 РУБ.</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+													<div class="pure-u-1-2">
+								<div class="advantages-item slideright" data-animation-speed="0.5">
+									<div class="pure-g">
+										<div class="pure-u-1-4">
+																						<img src="wp-content/uploads/2014/03/adv-icon-4.png" alt="" class="advantages-img"/>
+										</div>
+										<div class="pure-u-3-4">
+											<h4> ПОШИВ ТЕКСТИЛЯ</h4>
+											<p>Постельные комплекты, полотенца,  чехлы для стульев и т.д</p>
+											<h4>ОТ 227 РУБ.</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="pure-u-1-2">
+								<div class="advantages-item slideleft" data-animation-speed="0.5">
+									<div class="pure-g">
+										<div class="pure-u-1-4">
+																						<img src="wp-content/uploads/2014/03/adv-icon-6.png" alt="" class="advantages-img"/>
+										</div>
+										<div class="pure-u-3-4">
+											<h4> ПОШИВ УНИФОРМЫ СПЕЦОДЕЖДЫ</h4>
+											<p> Школьная форма, 
+медицинские халаты,
+одежда для официантов и т.д.</p>
+											<h4>ОТ 304 РУБ.</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+													<div class="pure-u-1-2">
+								<div class="advantages-item slideright" data-animation-speed="0.5">
+									<div class="pure-g">
+										<div class="pure-u-1-4">
+																						<img src="wp-content/uploads/2014/03/adv-icon-5.png" alt="" class="advantages-img"/>
+										</div>
+										<div class="pure-u-3-4">
+											<h4>ПОШИВ ПРОЧЕЙ ПРОДУКЦИИ</h4>
+											<p>платки,
+банданы,<br>
+промо сумки и т.д.</p>
+											<h4>ОТ 36 РУБ.</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+											</div>
+											</div>
+							
+											</div>
+
+											
+		<div id="why" style="background-image: url(./images/rk2.jpg);background-size: cover;">
+			<div class="container">
+				<h3 class="" data-animation-speed="0.5">Ваши<br/><span>выгоды<hr/></span></h3>
+				<div class="clear-fix"></div>
+				<ul class="why-inner zoom" data-animation-speed="1">
+					<li class="why-item-1">Бесплатный трансфер<br/><span>в наш офис</span></li>
+					<li class="why-item-2">Бесплатное<br/><span>лекало</span></li>
+					<li class="why-item-3">Бесплатная доставка<br/><span>ткани</span> и фурнитуры</li>
+					<li class="why-item-4"><span>Бесплатная</span><br/>доставка до ритэйла</li>
+					<li class="why-item-5">Бесплатная <br/><span>консультация</span> </li>
+					<li class="why-item-6">Бесплатный<br/><span>образец</span></li>
+					<li class="why-item-7"><span>Бесплатный</span><br/>склад</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		<div class="callbb" style="height:450px;width:100%;padding-top: 145px;background-image: url(images/callback-1-bg.jpg);">
+			<div style="width:940px;height:164px;margin:0 auto;box-shadow: 0px 0px 12px 0px #000000;background-color:#fff;padding-top:19px;">
+				<form action="consultation.php" method="post">
+					<h1 style="font-size:24px;color:#906832;text-align:center;font-weight:500;">ПОЛУЧИТЕ ПРЯМУЮ КОНСУЛЬТАЦИЮ, ПРЯМО СЕЙЧАС</h1>
+					<input type="text" placeholder="Ваше имя" name="name" style="width:230px;height:40px;margin-top:40px;margin-left:70px;border:3px solid #a9a9a9">
+					<input placeholder="Ваш телефон" name="phone" type="text" style="width:230px;height:40px;margin-top:40px;margin-left:70px;border:3px solid #a9a9a9">
+					<button style="width:240px;height:40px;background-color:#de2f4f;border:1px solid #de2f4f;border-radius:3px;border-bottom:3px solid #930c24;color:#fff;font-size:18px;margin-left:40px;">Оставить заявку</button>
+				</form>
+			</div>
+			
+		</div>
+		
+		
+		
+		<div id="how">
+			<div class="how-wrapper">
+				<div class="container">
+					<h3 class="">Как мы<br/><span>работаем<hr/></span></h3>
+					<div class="clear-fix"></div>
+					<ul class="how-inner" data-animation-speed="0.5">
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+
+<!-- 				<h3 class="fadein" data-animation-speed="0.5">Из чего можно<br/><span>сделать кухню<hr/></span></h3>
+				<div class="clear-fix"></div>
+				<p class="fadein" data-animation-speed="0.5"></p>
+				<ul class="mat-kitchen" class="fadein" data-animation-speed="0.5">
+					<li class="mat-kitchen-item-1 zoom" data-animation-speed="0.5">
+						<img src="images/mat-kitchen-1.png" alt=""/>
+						<span>Итальянский массив</span>
+					</li>
+					<li class="mat-kitchen-item-2 zoom" data-animation-speed="0.5">
+						<img src="images/mat-kitchen-2.png" alt=""/>
+						<span>Витражи</span>
+					</li>
+					<li class="mat-kitchen-item-3 zoom" data-animation-speed="0.5">
+						<img src="images/mat-kitchen-3.png" alt=""/>
+						<span>ДСП</span>
+					</li>
+					<li class="mat-kitchen-item-4 zoom" data-animation-speed="0.5">
+						<img src="images/mat-kitchen-4.png" alt=""/>
+						<span>АGТ</span>
+					</li>
+					<li class="mat-kitchen-item-5 zoom" data-animation-speed="0.5">
+						<img src="images/mat-kitchen-5.png" alt=""/>
+						<span>Глянцевая<br/>эмаль</span>
+					</li>
+					<li class="mat-kitchen-item-6 zoom" data-animation-speed="0.5">
+						<img src="images/mat-kitchen-6.png" alt=""/>
+						<span>Матовая эмаль</span>
+					</li>
+					<li class="mat-kitchen-item-7 zoom" data-animation-speed="0.5">
+						<img src="images/mat-kitchen-7.png" alt=""/>
+						<span>Декоративное стекло</span>
+					</li>
+					<li class="mat-kitchen-item-8 zoom" data-animation-speed="0.5">
+						<img src="images/mat-kitchen-8.png" alt=""/>
+						<span>Итальянский пластик</span>
+					</li>
+				</ul> -->
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		<div id="reviews" style="height:1445px;">
+			<div class="container">
+				<h2  class="" data-animation-speed="0.5">Наши клиенты<br/><span>о нас<hr/></span></h2>
+				<div class="clear-fix"></div>
+				<div class="pure-g">
+											<div class="pure-u-1-2">
+							<div class="reviews-item slideleft" data-animation-speed="0.5">
+								<div class="border-bg"></div>
+								<div class="reviews-text" >
+									<p>Благодаря этой фабрике неплохо экономим на отсутствии склада, так как складом пользуемся у этих ребят. При заказе минимальных партий склад предоставлют бесплатно. Бесплатная доставка.</p>
+									<img src="images/1.jpg"  alt="">
+									<b class="reviews-name">Игорь 27 лет, владелец бутика <br><br>
+8(903)969-64-45</b>
+								</div>
+															</div>
+						</div>
+											<div class="pure-u-1-2">
+							<div class="reviews-item slideright" data-animation-speed="0.5">
+								<div class="border-bg"></div>
+								<div class="reviews-text" >
+									<p>Долго не могла найти кто бы отшивал хотя бы в срок. Случайно нашла ребят в Интернете. Долго не верила обещаниям сайта,но приятно удивилась когда отшили все вовремя. Порадовала бесплатная доставка.</p>
+									<img src="images/2.jpg"  alt="">
+									<b class="reviews-name">Кристина  28 лет, предприниматель<br><br>
+8(926)686-40-09</b>
+								</div>
+															</div>
+						</div>
+											<div class="pure-u-1-2">
+							<div class="reviews-item slideleft" data-animation-speed="0.5">
+								<div class="border-bg"></div>
+								<div class="reviews-text" >
+									<p>Значительно снизили свои гарантийные возвраты. Качество отшива на должном уровне. Строчка ровная, не прыгает. Нитки не торчат. Лекала бесплатные - хорошо выигрываем у конкурентов в цене. У нас на каждую партию новые лекала.</p>
+									<img src="images/3.jpg"  alt="">
+									<b class="reviews-name">Александр 33 лет, владелец интернет-магазина<br><br>
+8(916)945-52-87</b>
+								</div>
+															</div>
+						</div>
+											<div class="pure-u-1-2">
+							<div class="reviews-item slideright" data-animation-speed="0.5">
+								<div class="border-bg"></div>
+								<div class="reviews-text" >
+									<p>Благодаря этой фабрике неплохо экономим на отсутствии склада, так как складом пользуемся у этих ребят. При заказе минимальных партий склад предоставлют бесплатно. Бесплатная доставка.</p>
+									<img src="images/4.jpg" alt="">
+									<b class="reviews-name">Игорь 27 лет, владелец бутика<br><br>
+8(903)969-64-45</b>
+								</div>
+															</div>
+						</div>
+									</div>
+			</div>
+		</div>
+		
+		
+		
+
+
+
+	<div style="width:100%;height:460px;background-image:url(images/callback-1-bg.jpg);background-position:center;">	
+			<div class="callbb" style="height:350px;width:100%;padding-top:100px;">
+			<div style="width:940px;height:164px;margin:0 auto;box-shadow: 0px 0px 12px 0px #000000;margin-top:20px;background-color:#fff;    padding-top: 22px;">
+				<form action="consultation.php" method="post">
+					<h1 style="font-size:24px;color:#906832;text-align:center;font-weight:500;">ПОЛУЧИТЕ ПРЯМУЮ КОНСУЛЬТАЦИЮ, ПРЯМО СЕЙЧАС</h1>
+					<input type="text" placeholder="Ваше имя" name="name" style="width:230px;height:40px;margin-top:40px;margin-left:70px;border:3px solid #a9a9a9">
+					<input placeholder="Ваш телефон" name="phone" type="text" style="width:230px;height:40px;margin-top:40px;margin-left:70px;border:3px solid #a9a9a9">
+					<button style="width:240px;height:40px;background-color:#de2f4f;border:1px solid #de2f4f;border-radius:3px;border-bottom:3px solid #930c24;color:#fff;font-size:18px;margin-left:40px;">Оставить заявку</button>
+				</form>
+			</div>
+		</div>
+	</div>
+		
+		
+		
+		
+			<div id="about">
+			<div class="about-wrapper" id="olo">
+				<div class="container">
+					<h2 class="" data-animation-speed="0.5">Производство<br/><span>и склад в Москве<hr/></span></h2>
+					<div class="clear-fix"></div>
+					<div class="pure-g zoom" data-animation-speed="0.5">
+						<div class="pure-u-1-2">
+														<div class="about-img"><img src="wp-content/uploads/2014/03/about-img-1.jpg" alt=""/></div>
+														<div class="about-img"><img src="wp-content/uploads/2014/03/da.jpg" alt=""/></div>
+														<div class="about-img"><img src="wp-content/uploads/2014/03/dada.jpg" alt=""/></div>
+						</div>
+						<div class="pure-u-1-2">
+							<div class="about-text" style="display:none;">
+						Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города </div>
+						</div>
+					</div>
+					
+							
+											</div>
+				</div>
+			</div>
+		</div>
+	
+	
+	
+		
+		<div id="contacts">
+			<div id="map"></div>
+			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=m7W1NUfGpyn8E7Y7MqCEOzJX1o_QkpTf&width=100%&height=565&lang=ru_UA&sourceType=constructor"></script>
+			<div class="contacts-inner">
+				<div class="container">
+					<div class="pure-g">
+						<div class="pure-u-2-3">
+						
+							<div class="contacts-address-container slideleft" data-animation-speed="0.5">
+								<span>«ПЪРЫТНЫЙ ШЬВЬЦЬ»</span>
+								<p>Россия,г. Москва, Метро Кожуховская, ул. Угрешская дом 12, строение 4.<br/> <br/>Email: info@ceh499.ru <br/>Тел.: +7 (499) <span style='font-weight:bold'>350-47-01 </span> (c 9 до 21)</p>
+							</div>
+						</div>
+						<div class="pure-u-1-3">
+							<div class="callback-right slideright" data-animation-speed="0.5">
+								<form action="ordert.php" method="post">
+									<div class="form-header">
+										<h5>Оставьте заявку</h5>
+									<p>на консультацию</p>
+								</div>
+								<input type="text" class="callback-name" name="name" placeholder="Имя"/>
+								<input type="text" class="callback-phone" name="phone" placeholder="Телефон*"/>
+								<p>Получите бесплатную консультацию прямо сейчас !</p>
+									<button type="submit" class="button">Оставить заявку</button>
+									<div class="form-email">или пишите на <a href="mailto:info@ceh499.ru">info@ceh499.ru</a></div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="container">
+				<div class="pure-g">
+					<div class="pure-u-1-4 cj">
+						<div class="logo">
+							<img class="menu-item" src="images/eridalogo.png" alt="" data-scroll-target="#page"/>
+						</div>
+					</div>
+					<div class="pure-u-1-2 cj">
+						<div class="contacts" style="margin-left:342px;">
+							+7 (499) <span style='font-weight:bold'>350-47-01</span>							<span class="time">(c 9 до 21)</span>
+						</div>
+					</div>
+					<div class="pure-u-1-4">
+						<div class="contact-button-container">
+							<button class="button contact-button">Заказать срочный звонок</button>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+	$('#rkk').hide();
+	$('#robo').hide();
+	$('.contact-button').click(function(){
+		$('#robo').show();
+		$('#rkk').show();
+$('#robo').click(function(){
+		$('#rkk').hide();
+		$('#robo').hide();
+	});
+	});
+	
+</script>
+
+
+</body>
+</html>

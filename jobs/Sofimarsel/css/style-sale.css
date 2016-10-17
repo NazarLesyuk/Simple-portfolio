@@ -1,0 +1,85 @@
+#sliders-fb4 {
+	width: 100%;
+	height: 360px;
+	background: #fee5be;
+	border-bottom: 6px solid #ffe6be;
+	margin: 0 auto;
+	padding-top: 5px;
+	margin-top: 80px;
+
+}
+.sliders-bg4 {
+	background: url(../images/fb4-sl-bg.png) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 354px;
+}
+.sliders-bg4 h1 {
+	padding-top: 40px;
+	font: 31px/31px "Tahoma", sans-serif;
+	text-align: center;
+}
+.sliders-bg4 p {
+	margin-top: 35px;
+	font: 19px/25px "Tahoma", sans-serif;
+	text-align: center;
+}
+
+
+
+#stock2 {
+	width: 100%;
+	/*height: 841px;*/
+	background: #ffe6be;
+	/*padding: 15px 0 23px 0*/
+}
+#stock2>.container>h1 {
+	font: 31px/31px "Tahome", sans-serif;
+	color: #000;
+	text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+.stock2-all {
+	width: 1220px;
+	margin: 0 auto;
+	/*outline: 1px solid red;*/
+}
+
+.review2 {
+	float: left;
+	width: 600px;
+	height: 400px;
+	background: #fff;
+	margin: 0 20px 20px 0;
+	/*padding: 20px 8px 15px 25px;*/
+}
+.review2:nth-child(2),
+.review2:nth-child(4),
+.review2:nth-child(6){
+	margin-right: 0;
+}
+.review2:nth-child(5),
+.review2:nth-child(6){
+	/*margin-bottom: 0;*/
+}
+
+.review2 img {
+	width: 100%;
+	height: 200px;
+}
+.review2 h1 {
+	margin: 0 auto;
+	margin-top: 35px;
+	font: 23px/23px "Tahome", sans-serif;
+	text-align: center;
+	text-decoration: underline;
+}
+.review2 p {
+	display: block;
+	width: 550px;
+	height: 100px;
+	margin: 0 auto;
+	margin-top: 30px;
+	font: 19px/25px "Tahome", sans-serif;
+}

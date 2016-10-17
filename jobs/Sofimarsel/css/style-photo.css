@@ -1,0 +1,51 @@
+#sliders-fb5 {
+	width: 100%;
+	height: 360px;
+	background: #fee5be;
+	border-bottom: 6px solid #ffe6be;
+	margin: 0 auto;
+	padding-top: 5px;
+	margin-top: 80px;
+
+}
+.sliders-bg5 {
+	background: url(../images/fb5-sl-bg.png) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 354px;
+}
+.sliders-bg5 h1 {
+	padding-top: 40px;
+	font: 31px/31px "Tahoma", sans-serif;
+	text-align: center;
+}
+.sliders-bg5 p {
+	margin-top: 35px;
+	font: 19px/25px "Tahoma", sans-serif;
+	text-align: center;
+}
+
+#big-gallery {
+	width: 100%;
+	height: auto;
+	background: white;
+	padding: 122px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.container-of-photos {
+	width: 1224px;
+	height: auto;
+	margin: 0 auto;
+	/*background: #ccc;*/
+}
+.item-photo {
+	display: inline-block;
+	width: 385px;
+	height: 285px;
+	margin: 0 30px 30px 0;
+	background-size: cover;
+}
+.item-photo:nth-child(3n){
+	margin-right: 0;
+}

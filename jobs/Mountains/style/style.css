@@ -1,0 +1,515 @@
+/* IMPORT FONTS */
+@font-face {
+    font-family: 'bringinregular';
+    src: url("../fonts/bringin-webfont.eot");
+    src: url("../fonts/bringin-webfont.eot?#iefix") format('embedded-opentype'),
+         url("../fonts/bringin-webfont.woff2") format('woff2'),
+         url("../fonts/bringin-webfont.woff") format('woff'),
+         url("../fonts/bringin-webfont.ttf") format('truetype'),
+         url("../fonts/bringin-webfont.svg#bringinregular") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/* END IMPORT FONTS */
+/*PREPERING STYLE*/
+html {height: 100%;}
+body {
+	height: 100%;
+	font: 14px/18px 'Times New Roman', Times, sans-serif;
+	background-color: #FFF;
+}
+
+ol, ul {list-style: none;}
+
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+a, a:hover { text-decoration: none;}
+
+.clearfix:before,
+.clearfix:after{
+	content: '';
+	display: table;
+}
+
+.clearfix:after{clear: both;}
+
+.left {float: left;}
+.right {float: right;}
+.text-left { text-align: left;}
+.text-right { text-align: right;}
+/*END PREPERING STYLE*/
+
+/*BEGIN firs screen*/
+.container{
+	width: 1170px;
+	margin: 0 auto;
+	/*outline: 1px solid red;*/
+}
+header {
+	position: absolute;
+	width: 100%;
+	height: 90px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, .23);;
+	padding: 22px 0;
+	box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+	margin-top: 8px;
+	display: block;
+	float: left;
+	margin-left: 30px;
+	margin-right: 60px;
+}
+ul.menu {
+	/*margin-top: 15px;*/
+}
+.menu li{
+	float: left;
+	display: inline-block;
+	list-style-type: none;
+	font: bold 14px/14px "Open Sans", sans-serif;
+	line-height: 44px;
+	text-transform: uppercase;
+	color: #9daeb6;
+	margin-right: 20px;
+}
+.menu li a{
+	color: #9daeb6;
+}
+.menu li a:hover{
+	color: #36aeea;
+}
+.call-us {
+	float: right;
+	font: bold 12px/12px "Raleway", sans-serif;
+	color: #36aeea;
+	width: 153px;
+	height: 46px;
+	line-height: 42px;
+	border: 3px solid #36aeea;
+	border-radius: 4px;
+	text-transform: uppercase;
+}
+.call-us:hover {
+	color: white;
+	background: #36aeea;
+	border-radius: 4px;
+	text-transform: uppercase;
+}
+
+#home {
+	width: 100%;
+	height: 700px;
+	background: #ddd url(../images/bg-home.png) no-repeat center bottom;
+	background-size: cover;
+}
+.main-home {
+	position: absolute;
+	margin-top: 220px;
+	width: 1130px;
+	height: 325px;
+	border-left: 3px solid white;
+	border-right: 3px solid white;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+}
+
+#home .container {
+	position: relative;
+}
+.man {
+	display: block;
+	width: 537px;
+	height: 586px;
+    /*position: absolute;*/
+    /*left: 50%;*/
+    margin-left: 460px;
+    margin-top: -387px;
+    z-index: 1;
+	background: url(../images/man.png) no-repeat bottom;
+}
+
+.border-bottom{ 
+		border-bottom: 3px solid white;
+		z-index: 2;
+		position: relative;
+    	top: -158px;
+}
+
+.home-container {
+	padding: 38px 0 34px 34px;
+	/*z-index: 5;*/
+	/*opacity: .0;*/
+
+}
+
+.home-container h1{
+	font: bold 36px/40px 'Droid', sans-serif;
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 10px;
+}
+
+.home-container span.bringinregular{
+	font: bold 49px/16px 'bringinregular', sans-serif;
+	color: #56c7ff;
+	text-transform: none;
+	letter-spacing: 4px;
+}
+.home-container p {
+	font: 300 18px/28px 'Open-Sans', sans-serif;
+	color: white;
+	margin-top: 26px;
+	
+}
+
+.home-button {
+	margin-top: 30px;
+	display: block;
+	width: 253px;
+	height: 60px;
+	font: 700 14px/14px 'Raleway', sans-serif;
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 3px;
+	text-align: center;
+	line-height: 60px;
+	background-color: #36aeea;
+	border-radius: 4px;
+	box-shadow: 0 0 35px rgba(3, 3, 3, 0.06);
+}
+.home-button:hover {
+	width: 253px;
+	height: 60px;
+	line-height: 58px;
+	border: 1px solid white;
+	background: rgba(1,1,1,0);
+	color: #36aeea;
+}
+/*END firs screen*/
+
+/*BEGIN 2 screen*/
+#about {
+	width: 100%;
+	background: #f6f4f4;
+	height: 670px;
+}
+#about .container{
+	position: relative;
+}
+#about .container img {
+	margin-top: 200px;
+}
+#about .container h1 {
+	font: bold 20px/20px "Open-Sans", sans-serif;
+	text-transform: uppercase;
+	color: #000;
+	letter-spacing: 5px;
+	margin-top: 40px;
+}
+#about .container p {
+	font: 300 14px/14px "Open-Sans", sans-serif;
+	color: #949494;
+	margin-top: 25px;
+	line-height: 26px;
+}
+#about .container a {
+	margin-top: 30px;
+	display: block;
+	font: bold 12px/12px "Open-Sans", sans-serif;
+	line-height: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	/* Style for "Rectangle 40" */
+	width: 130px;
+	height: 40px;
+	background-color: #36aeea;
+	border-radius: 4px;
+}
+#about .container a:hover {
+	margin-top: 30px;
+	display: block;
+	width: 130px;
+	height: 40px;
+	font: bold 12px/12px "Open-Sans", sans-serif;
+	line-height: 38px;
+	color: #36aeea;
+	background: #fff ;
+	border-radius: 4px;
+	border: 1px solid #36aeea;
+}
+
+#about .container {
+	width: 1119px;
+	height: 512px;
+	background: url("../images/bg-about.png") no-repeat;
+	background-position: 90px 8px;
+}
+#about .container img.pic-about {
+	position: absolute;
+	top: -220px;
+	left: 480px;
+}
+/*END 2 screen*/
+
+/*BEGIN 3 screen*/
+#journal {
+	width: 100%;
+	text-align: center;
+	padding: 70px 0 90px 0;
+}
+#journal .container>h1 {
+	margin-top: 35px;
+	font: bold 30px/30px "Open-Sans", sans-serif;
+	text-transform: uppercase;
+	color: #000;
+}
+.big-block {
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 1140px;
+    height: 760px;
+	/*outline: 1px solid red;*/
+	background-color: white;
+	box-shadow: 0 0 21px rgba(6, 6, 6, 0.13);
+}
+.item {
+	float: left;
+	display: inline-block;
+	width: 380px;
+	height: 380px;
+	/*outline: 1px solid green;*/
+	margin: 0;
+	position: relative;
+}
+.block1{
+	margin: auto 0;
+}
+.item:first-child {
+	background: url("../images/heart.png") no-repeat;
+	background-size: cover;
+}
+.item:nth-child(2)>h5,
+.item:nth-child(4)>h5,
+.item:nth-child(6)>h5
+{
+	margin-top: 40px;
+	font: bold 11px/11px "Open-Sans", sans-serif;
+	color: #16b5ef;
+	line-height: 13px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.item:nth-child(2)>h1,
+.item:nth-child(4)>h1,
+.item:nth-child(6)>h1
+{
+	margin-top: 50px;
+	font: bold 16px/10px "Open-Sans", sans-serif;
+	color: #212121;
+	line-height: 26px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.delettext{
+	text-decoration: line-through;
+}
+.item:nth-child(2)>p,
+.item:nth-child(4)>p,
+.item:nth-child(6)>p
+{
+	margin-top: 20px;
+	font: 400 14px/14px "Open-Sans", sans-serif;
+	color: #777;
+	line-height: 20px;
+}
+.item:nth-child(2)>span,
+.item:nth-child(4)>span,
+.item:nth-child(6)>span
+{
+	display: block;
+	margin-top: 38px;
+	font: 400 italic 15px/15px "Times New Roman";
+	color: #212121;
+	line-height: 18px;
+	margin-bottom: 50px;
+}
+.item:nth-child(6)>span {
+	margin-top: 64px;
+}
+
+.item:nth-child(3){
+	background: url("../images/water-drop.png") no-repeat;
+	background-size: cover;
+}
+.item:nth-child(5){
+	background: url("../images/sheet.png") no-repeat;
+	background-size: cover;
+}
+
+.item:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid rgba(102, 102, 102, 0);
+    border-left: 0px solid transparent;
+    border-right: 12px solid rgb(255, 255, 255);
+    border-bottom: 12px solid rgba(102, 102, 102, 0);
+    top: 35px;
+    left: -11px;
+}
+.item:nth-child(4):after {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid rgba(102, 102, 102, 0);
+    border-left: 12px solid rgb(255, 255, 255);
+    border-right: 0px solid rgb(255, 255, 255);
+    border-bottom: 12px solid rgba(102, 102, 102, 0);
+    top: 35px;
+    right: -11px;
+    z-index: 5;
+}
+.item:nth-child(6):after {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0px solid rgb(255, 255, 255);
+    border-left: 12px solid rgba(255, 255, 255, 0);
+    border-right: 12px solid rgba(255, 255, 255, 0);
+    border-bottom: 12px solid rgb(255, 255, 255);
+    top: -11px;
+    left: 35px;
+    z-index: 5;
+}
+/*END 3 screen*/
+
+/*BEGIN 4 screen*/
+#first-form {
+	width: 100%;
+	height: 650px;
+	padding: 145px 0 245px 0;
+	background: #fff url("../images/tree.png") no-repeat bottom center;
+	background-size: cover;
+}
+
+#first-form h1 {
+	margin-top: 40px;
+	font: bold 20px/20px "Open-Sans", sans-serif;
+	line-height: 43px;
+	color: #000;
+	letter-spacing: 3px;
+}
+#first-form p {
+	margin-top: 25px;
+	font: 300 16px/16px "Open-Sans", sans-serif;
+	line-height: 26px;
+	color: #949494;
+}
+
+#first-form form {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	width: 855px;
+	height: 67px;
+	background: #fff;
+	border-radius: 10px;
+	/*padding: 13px 0 13px 20px;*/
+	position: relative;
+}
+.cont-form {
+	/*outline: 2px solid blue;*/
+	height: 39px;
+    margin-top: 3px;
+    margin-left: 20px;
+    position: absolute;
+}
+#first-form form span {
+	font: 300 16px/16px "Roboto", sans-serif;
+	color: #848484;	
+}
+
+
+#first-form form span{
+	display: inline-block;
+	width: 85px;
+	line-height: 35px;
+	/*outline: 1px solid green;*/
+	/*margin-left: 20px;*/
+}
+#first-form form input {
+		display: inline-block;
+		width: 128px;
+		border: none;
+    font-size: 16px;
+}
+
+#first-form form span.line {
+	width: 115px;
+	padding-left: 20px;
+	border-left: 2px solid #ebebeb;
+}
+
+#first-form form input[type="submit"] {
+	font: bold 16px/16px "Open-Sans", sans-serif;
+	color: white;
+	text-transform: uppercase;
+	background: #36aeea;
+    width: 225px;
+    height: 61px;
+    border-radius: 6px;
+    border: none;
+    margin-left: 135px;
+    cursor: pointer;
+}
+#first-form form input[type="submit"]:hover {
+	background: white;
+    border-radius: 6px;
+    /*line-height: 61px;*/
+	border: 1px solid #36aeea;
+	color: #36aeea;
+
+}
+
+.lock {
+	font: 14px/14px "Open-Sans", sans-serif;
+	color: #36aeea;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+}
+.lock img {
+	vertical-align: middle;
+}
+/*END 4 screen*/
+
+/*BEGIN 5 screen*/
+#work {
+	width: 100%;
+	height: 645px;
+	background: white;
+	padding: 70px 0 35px 0;
+}
+/*END 5 screen*/
+/*BEGIN 5 screen*/
+/*END 5 screen*/
+/*BEGIN 5 screen*/
+/*END 5 screen*/
+/*BEGIN 5 screen*/
+/*END 5 screen*/
+
+
+
